@@ -251,6 +251,8 @@ static NSString *DrawToolNormalModeMessage = nil;
     return _leftToolbarItems;
 }
 
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wundeclared-selector"
 - (NSArray *)rightBarButtonItems;
 {
     if (_rightToolbarItems == nil) {
@@ -263,7 +265,7 @@ static NSString *DrawToolNormalModeMessage = nil;
     
     return _rightToolbarItems;
 }
-
+#pragma clang diagnostic pop
 
 - (NSString *)toolbarTitle;
 {

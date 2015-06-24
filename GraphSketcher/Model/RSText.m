@@ -350,6 +350,9 @@ NSDictionary *RSTextAttributesMake(OAFontDescriptor *fontDescriptor, OQColor *co
     _cachedSize = CGSizeZero;
 }
 
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wunreachable-code"
+
 - (void)drawAtPoint:(CGPoint)pt baselineRotatedByDegrees:(CGFloat)degrees;
 {
     
@@ -402,6 +405,7 @@ NSDictionary *RSTextAttributesMake(OAFontDescriptor *fontDescriptor, OQColor *co
     }
 #endif
 }
+#pragma clang diagnostic pop
 
 #pragma mark - Private
 

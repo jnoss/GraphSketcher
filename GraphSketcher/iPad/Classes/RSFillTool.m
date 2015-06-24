@@ -106,6 +106,9 @@
     return _leftToolbarItems;
 }
 
+
+#pragma GCC diagnostic ignored "-Wundeclared-selector"
+
 - (NSArray *)rightBarButtonItems;
 {
     if (_rightToolbarItems == nil) {

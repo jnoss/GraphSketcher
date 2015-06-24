@@ -242,6 +242,8 @@
 {
     [self registerUndoWithObject:obj action:str state:state name:nil];
 }
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wundeclared-selector"
 - (void)registerUndoWithObject:(id)obj action:(NSString *)str state:(id)state name:(NSString *)name;
 {
     if (![_undoManager isUndoRegistrationEnabled])
@@ -254,6 +256,7 @@
     if (name)
         [self setActionName:name];
 }
+#pragma clang diagnostic pop
 
 - (void)registerUndoWithObjectsIn:(RSGraphElement *)obj action:(NSString *)str {
     id state = nil;

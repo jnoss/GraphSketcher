@@ -181,6 +181,9 @@ RCS_ID("$Header$");
     return _leftToolbarItems;
 }
 
+
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wundeclared-selector"
 - (NSArray *)rightBarButtonItems;
 {
     if (_rightToolbarItems == nil) {
@@ -203,6 +206,8 @@ RCS_ID("$Header$");
     
     return _rightToolbarItems;
 }
+#pragma clang diagnostic pop
+
 
 #pragma mark -
 #pragma mark KVO
@@ -265,6 +270,8 @@ RCS_ID("$Header$");
     [[[AppController controller] document] finishUndoGroup];
 }
 
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wundeclared-selector"
 - (void)_performFlickDeletionWithTranslation:(CGPoint)translation;
 // Translation is in touch coords
 {
@@ -298,7 +305,7 @@ RCS_ID("$Header$");
     }
     [UIView commitAnimations];
 }
-
+#pragma clang diagnostic pop
 
 
 #pragma mark -

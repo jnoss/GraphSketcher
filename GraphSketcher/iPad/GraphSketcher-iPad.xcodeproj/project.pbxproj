@@ -2042,7 +2042,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GraphSketcher-iPad" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2862,7 +2862,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34EB8D2D1190C3F500D50C39 /* Omni-Global-Debug.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -2870,7 +2875,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34EB8D2E1190C3F500D50C39 /* Omni-Global-Release.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Release;
 		};
